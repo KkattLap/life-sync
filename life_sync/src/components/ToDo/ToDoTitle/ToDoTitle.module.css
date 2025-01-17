@@ -1,0 +1,10 @@
+.toDoTitle {
+  background-color: rgb(183, 245, 255);
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgb(36, 155, 173);
+  margin-top: 6%;
+}
+
+.toDoTitleHeader {
+  color: rgb(8, 56, 86);
+}
