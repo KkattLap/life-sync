@@ -1,0 +1,39 @@
+.toDoForm {
+  margin-top: 5%;
+  height: 56px;
+  box-shadow: 5px 5px 20px rgb(36, 155, 173);
+  border-radius: 5px;
+  background-color: rgb(183, 245, 255);
+}
+
+.toDoFormInput {
+  border: 2px solid rgb(183, 245, 255);
+  border-radius: inherit;
+  flex: 1;
+  height: 100%;
+  font-size: 18px;
+  padding-left: 2%;
+}
+.toDoFormInput:focus-visible {
+  border: 2px solid rgb(148, 195, 202);
+  outline: none;
+}
+.toDoFormInput:focus {
+  border: 2px solid rgb(148, 195, 202);
+  outline: none;
+}
+.toDoFormButton {
+  height: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.toDoFormButton:hover {
+  background-color: rgb(174, 230, 239);
+}
+.toDoFormButton:focus-visible {
+  background-color: rgb(174, 230, 239);
+  outline: none;
+}
+.toDoFormButton:active {
+  background-color: rgb(169, 222, 230);
+}
