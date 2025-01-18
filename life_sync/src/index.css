@@ -1,0 +1,14 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+input,
+button {
+  border: none;
+}
+
+button {
+  background-color: transparent;
+}
