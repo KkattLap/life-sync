@@ -1,0 +1,54 @@
+.toDoList {
+  flex-direction: column;
+  margin-top: 28px;
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+.toDoItem {
+  width: 100%;
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid rgb(183, 245, 255);
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.ToDoItemSelect {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.ToDoItemSelect + label::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgb(183, 245, 255);
+  border-radius: 2px;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+.ToDoItemSelect:checked + label::before {
+  background-color: rgb(93, 191, 206);
+  border-color: rgb(15, 88, 99);
+  background-image: url("./doneIcon.svg");
+}
+
+.toDoItemText {
+  flex: 1;
+  margin-left: 2%;
+}
+.toDoItemDelete {
+  background-color: rgb(223, 110, 110);
+  color: white;
+  padding: 8px;
+  border-radius: 2px;
+}
+
+.toDoItemDelete > img {
+  display: block;
+}
