@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import styles from "./ToDo.module.css";
 import ToDoTitle from "./ToDoTitle/ToDoTitle";
 import ToDoForm from "./ToDoForm/ToDoForm";
@@ -10,14 +10,11 @@ export default function ToDo() {
   const [inputValue, setInputValue] = useState("");
   const [todos, setTodos] = useState([]);
   const [checked, setChecked] = useState([]);
-  useEffect(() => {
-    console.log(checked);
-  }, [checked]);
+
   function handleChecked(index) {
     const updatedCheckedState = checked.map((item, pos) =>
       pos === index ? !item : item
     );
-    console.log(index);
     setChecked(updatedCheckedState);
   }
 
@@ -26,7 +23,7 @@ export default function ToDo() {
   }
   function handleSubmit(e) {
     e.preventDefault();
-    setTodos([...todos, inputValue]);
+    setTodos([inputValue, ...todos]);
     setChecked([...checked, false]);
     setInputValue("");
   }
