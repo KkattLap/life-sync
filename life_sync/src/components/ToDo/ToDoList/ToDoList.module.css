@@ -37,7 +37,10 @@
   border-color: rgb(15, 88, 99);
   background-image: url("./doneIcon.svg");
 }
-
+.checked {
+  color: grey;
+  text-decoration: line-through;
+}
 .toDoItemText {
   flex: 1;
   margin-left: 2%;

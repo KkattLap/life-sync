@@ -20,7 +20,13 @@ export default function ToDoList({
               checked={checked[index]}
             ></input>
             <label htmlFor={`toDoItemSelect${index}`}></label>
-            <span className={styles.toDoItemText}>{todoItem}</span>
+            <span
+              className={`${styles.toDoItemText} ${
+                checked[index] ? styles.checked : ""
+              }`}
+            >
+              {todoItem}
+            </span>
             <button
               className={styles.toDoItemDelete}
               onClick={() => handleDelete(index)}
