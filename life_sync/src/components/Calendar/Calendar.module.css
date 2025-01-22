@@ -1,0 +1,49 @@
+.calendar {
+  display: flex;
+  height: 100vh;
+}
+
+.calendarNotes {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 1fr 3fr 3fr 3fr;
+  margin: 20px;
+  box-shadow: inset 0 0 0 3px rgb(153, 153, 153);
+}
+
+.calendarNotes > * {
+  position: relative;
+}
+.calendarNotes > *::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 2px solid rgb(235, 235, 235);
+  z-index: -1; /* граница под контентом и под box-shadow родителя */
+}
+.calendarNotes > *:nth-child(-n + 7) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calendarNotes > *:nth-child(7n + 4) {
+  background-color: azure;
+  border: 2px solid rgb(235, 235, 235);
+}
+.calendarNavigation {
+  background-color: aliceblue;
+}
+
+@media (max-width: 820px) {
+  .calendar {
+    flex-direction: column;
+  }
+  .calendarNavigation {
+    width: 100%;
+    height: 20%;
+  }
+}
