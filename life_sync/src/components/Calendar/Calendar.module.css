@@ -25,6 +25,18 @@
   border: 2px solid rgb(235, 235, 235);
   z-index: -1; /* граница под контентом и под box-shadow родителя */
 }
+.calendarNotes > span > textarea {
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+  background: transparent;
+}
+.calendarNotes > span > textarea:focus-visible,
+.calendarNotes > span > textarea:focus {
+  border: 2px solid rgb(154, 154, 154);
+  border-radius: 0;
+  outline: none;
+}
 .calendarNotes > *:nth-child(-n + 7) {
   display: flex;
   justify-content: center;
