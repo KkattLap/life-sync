@@ -14,3 +14,16 @@ button {
 button {
   background-color: transparent;
 }
+
+textarea {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
