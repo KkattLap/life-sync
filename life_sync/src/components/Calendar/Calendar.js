@@ -59,7 +59,7 @@ export default function Calendar() {
         ))}
         {userNotes.map((userNote, index) => (
           <span key={index + 7} id={index + 7}>
-            {userNote}
+            <textarea value={userNote} onChange={setUserNotes}></textarea>
           </span>
         ))}
       </div>
