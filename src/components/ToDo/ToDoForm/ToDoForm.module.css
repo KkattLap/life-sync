@@ -6,7 +6,7 @@
   background-color: rgb(183, 245, 255);
 }
 
-.toDoFormInput {
+.toDoForm__input {
   border: 2px solid rgb(183, 245, 255);
   border-radius: inherit;
   flex: 1;
@@ -14,26 +14,26 @@
   font-size: 18px;
   padding-left: 2%;
 }
-.toDoFormInput:focus-visible {
+.toDoForm__input:focus-visible {
   border: 2px solid rgb(148, 195, 202);
   outline: none;
 }
-.toDoFormInput:focus {
+.toDoForm__input:focus {
   border: 2px solid rgb(148, 195, 202);
   outline: none;
 }
-.toDoFormButton {
+.toDoForm__button {
   height: 100%;
   aspect-ratio: 1 / 1;
 }
 
-.toDoFormButton:hover {
+.toDoForm__button:hover {
   background-color: rgb(174, 230, 239);
 }
-.toDoFormButton:focus-visible {
+.toDoForm__button:focus-visible {
   background-color: rgb(174, 230, 239);
   outline: none;
 }
-.toDoFormButton:active {
+.toDoForm__button:active {
   background-color: rgb(169, 222, 230);
 }
