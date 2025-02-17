@@ -5,7 +5,7 @@
   padding-inline-start: 0;
 }
 
-.toDoItem {
+.toDoList__item {
   width: 100%;
   padding: 2%;
   display: flex;
@@ -15,12 +15,12 @@
   border-radius: 5px;
   margin-bottom: 15px;
 }
-.ToDoItemSelect {
+.toDoList__checkbox {
   position: absolute;
   z-index: -1;
   opacity: 0;
 }
-.ToDoItemSelect + label::before {
+.toDoList__checkbox + label::before {
   content: "";
   display: inline-block;
   width: 18px;
@@ -32,26 +32,26 @@
   background-position: center center;
   background-size: 100% 100%;
 }
-.ToDoItemSelect:checked + label::before {
+.toDoList__checkbox:checked + label::before {
   background-color: rgb(93, 191, 206);
   border-color: rgb(15, 88, 99);
   background-image: url("./doneIcon.svg");
 }
-.checked {
+.toDoList__toDoItemText_checked {
   color: grey;
   text-decoration: line-through;
 }
-.toDoItemText {
+.toDoList__itemText {
   flex: 1;
   margin-left: 2%;
 }
-.toDoItemDelete {
+.toDoList__itemDelete {
   background-color: rgb(223, 110, 110);
   color: white;
   padding: 8px;
   border-radius: 2px;
 }
 
-.toDoItemDelete > img {
+.toDoList__itemDelete > img {
   display: block;
 }

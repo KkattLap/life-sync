@@ -11,24 +11,24 @@ export default function ToDoList({
     <ul className={styles.toDoList}>
       {todos &&
         todos.map((todoItem, index) => (
-          <li key={index} className={styles.toDoItem}>
+          <li key={index} className={styles.toDoList__item}>
             <input
               id={`toDoItemSelect${index}`}
               type="checkbox"
-              className={styles.ToDoItemSelect}
+              className={styles.toDoList__checkbox}
               onChange={() => handleChecked(index)}
               checked={checked[index]}
             ></input>
             <label htmlFor={`toDoItemSelect${index}`}></label>
             <span
-              className={`${styles.toDoItemText} ${
-                checked[index] ? styles.checked : ""
+              className={`${styles.toDoList__itemText} ${
+                checked[index] ? styles.toDoList__toDoItemText_checked : ""
               }`}
             >
               {todoItem}
             </span>
             <button
-              className={styles.toDoItemDelete}
+              className={styles.toDoList__itemDelete}
               onClick={() => handleDelete(index)}
             >
               <img src={deleteIcon} alt="delete" />
