@@ -1,0 +1,25 @@
+.headerContainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 0;
+}
+
+.headerNavigation {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+.headerNavigation__homeIcon {
+  height: 44px;
+}
+.headerNavigation__links {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerNavigation__links > a {
+  margin: 0 16px;
+}
