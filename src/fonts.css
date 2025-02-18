@@ -4,9 +4,9 @@
   font-weight: 400;
 }
 
-.textHeader_font_48 {
+.textHeader_font_64 {
   font-family: "Open Sans", sans-serif;
-  font-size: 48px;
+  font-size: 64px;
   font-weight: 400;
 }
 
@@ -14,4 +14,11 @@
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   color: grey;
+}
+
+.diaryButton__text_font32 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: white;
 }
