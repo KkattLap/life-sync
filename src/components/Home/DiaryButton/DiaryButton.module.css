@@ -1,0 +1,26 @@
+.diaryButton {
+  width: 368px;
+  height: 58px;
+  background-color: rgb(44, 227, 224);
+  border-radius: 22px;
+  position: relative;
+  box-shadow: 6px 6px 12px rgb(6, 92, 91);
+}
+
+.diaryButton__text {
+  display: inline-block;
+  position: absolute;
+  left: 26px;
+  top: 5px;
+}
+
+.arrowButton {
+  background-color: white;
+  width: 66px;
+  height: 50px;
+  border-radius: inherit;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  bottom: 4px;
+}
