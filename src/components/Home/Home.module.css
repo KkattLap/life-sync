@@ -1,0 +1,74 @@
+.mainBlock {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.textBlock {
+  box-sizing: content-box;
+  width: 608px;
+  margin-left: 80px;
+}
+.textHeader {
+  position: relative;
+}
+.textHeader__word1,
+.textHeader__word2,
+.textHeader__word3 {
+  display: inline-block;
+  position: absolute;
+}
+.textHeader__word1_rotate {
+  transform: rotate(-12deg);
+}
+.textHeader__word2_rotate {
+  transform: rotate(20deg);
+}
+.textHeader__word3_rotate {
+  transform: rotate(-24deg);
+}
+.textHeader__word1_position {
+  left: -60px;
+  top: -66px;
+}
+.textHeader__word2_position {
+  left: 326px;
+  top: -74px;
+}
+.textHeader__word3_position {
+  left: 458px;
+  top: -74px;
+}
+.textHeader__word3_red {
+  color: red;
+}
+.otherHeaderWords {
+  display: flex;
+  margin-bottom: 16px;
+  white-space: no-wrap;
+}
+.otherHeaderWords__word_noShrink {
+  flex: 0 0 auto;
+}
+.otherHeaderWords__word3 {
+  margin-left: 16px;
+}
+.otherHeaderWords__word3_accentColor {
+  color: rgb(44, 227, 224);
+}
+.textBlock__p {
+  display: inline-block;
+  width: inherit;
+}
+.imgContainer {
+  width: 50%;
+  min-width: 704px;
+  margin: 0 5%;
+}
+.imgContainer__img {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
